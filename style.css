@@ -364,26 +364,26 @@ section .title::after{
     transition: all 0.3s ease;
 }
 /* responsive media query start */
-@media (max-width: 1300px) {
+@media (max-width: 1400px){
     .home .max-width{
         margin-left: 0px;
     }
 }
 
-@media (max-width: 1104px) {
+@media (max-width: 1325px){
     .about .about-content .left img{
-        height: 350px;
-        width: 350px;
+        height: 400px;
+        width: 400px;
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1144px){
     .max-width{
         padding: 0 50px;
     }
 }
 
-@media (max-width: 947px){
+@media (max-width: 1425px){
     .menu-btn{
         display: block;
         z-index: 999;
@@ -399,7 +399,7 @@ section .title::after{
         top: 0;
         background: black;
         text-align: center;
-        padding-top: 80px;
+        padding-top: 100px;
         transition: all 0.3s ease;
     }
     .navbar .menu.active{
@@ -420,7 +420,7 @@ section .title::after{
         font-size: 35px;
     }
     .max-width{
-        max-width: 930px;
+        max-width: 800px;
     }
     .about .about-content .column{
         width: 100%;
@@ -431,6 +431,7 @@ section .title::after{
         margin: 0 auto 60px;
     }
     .about .about-content .right{
+        margin-left: 50px;
         flex: 100%;
     }
     .skills .skills-content .column{
@@ -442,7 +443,7 @@ section .title::after{
     }
 }
 
-@media (max-width: 690px){
+@media (max-width: 843px){
     .home .home-content .text-2{
         font-size: 60px;
     }
@@ -451,7 +452,7 @@ section .title::after{
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 600px){
     .projects .carousel .card{
         background: lightgray;
         border-radius: 6px;
