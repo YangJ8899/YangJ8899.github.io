@@ -364,7 +364,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 /* responsive media query start */
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
     .home .max-width{
         margin-left: 0px;
     }
