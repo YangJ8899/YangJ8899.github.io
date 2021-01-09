@@ -513,3 +513,52 @@ section .title::after{
         transition: all 0.3s ease;
     }
 }
+
+@media (max-width: 550px){
+    .projects .carousel .card img{
+        height: 75px;
+        width: 100px;
+        object-fit: cover;
+        border-radius: 25%;
+        border: 2px solid turquoise;
+    }
+}
+
+@media (max-width: 500px){
+    .projects .carousel .card img{
+        height: 65px;
+        width: 90px;
+        object-fit: cover;
+        border-radius: 25%;
+        border: 2px solid turquoise;
+    }
+    .projects .carousel .card .text{
+        font-size: 15px;
+        font-weight: 450;
+        margin: 10px 0 7px 0;
+    }
+    .projects .carousel .card p{
+        display: flex;
+        text-align: justify;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .projects .carousel .card a{
+        display: inline-block;
+        background: yellowgreen;
+        color: black;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 4px 16px;
+        margin-top: 10px;
+        border-radius: 6px;
+        border: 2px solid yellowgreen;
+        transition: all 0.3s ease;
+    }
+    .projects .carousel .card a:hover{
+        color: black;
+        background: none;
+        transition: all 0.3s ease;
+    }
+
+}
