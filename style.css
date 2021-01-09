@@ -383,7 +383,7 @@ section .title::after{
     }
 }
 
-@media (max-width: 1425px){
+@media (max-width: 1380px){
     .menu-btn{
         display: block;
         z-index: 999;
