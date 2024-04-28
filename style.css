@@ -19,6 +19,7 @@ section{
     background: beige;
 }
 .about, .skills, .projects, .footer{
+    padding-top: 100px;
     font-family: 'Poppins', 'sans-serif';
 }
 .about .about-content,
@@ -205,6 +206,110 @@ section .title::after{
     color: black;
     background: none;
     transition: all 0.3s ease;
+}
+
+.about-experiences ul li {
+    margin: 10px 0;
+}
+
+/* experiience section styling */
+.experiences {
+    padding-top: 100px;
+    background: grey;
+}
+.experience-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-entity {
+    display: flex;
+    width: calc(100% - 10rem - 10rem);
+    height: fit-content;
+    margin: 2rem 5rem 2rem 10rem;
+    padding: 1rem;
+    justify-content: space-between;
+    border: 0.15rem solid;
+    border-image: radial-gradient(circle, rgba(242,242,242,1) 0%, rgba(89,89,89,0) 100%);
+    transition: background-color .25s ease-in;
+}
+
+
+.experience-entity:hover {
+    background-color: darkgrey;
+    cursor: pointer;
+    transition: background-color .25s ease-out;
+}
+
+.experience-entity:hover .experience-time h4 {
+    letter-spacing: .05rem;
+}
+
+.experience-entity h1 {
+    font-family: 'Ubuntu', 'sans-serif'; 
+    font-size: 48px;
+    font-weight: 600;
+    color: rgba(245, 245, 245, 0.808);
+    transition: letter-spacing .25s ease;
+}
+
+.experience-entity h2 {
+    font-family: 'Ubuntu', 'sans-serif'; 
+    font-size: 20px;
+    font-weight: 400;
+    color: lightblue;
+}
+
+.experience-entity h3 {
+    font-family: 'Ubuntu', 'sans-serif'; 
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: rgba(245, 245, 245, 0.651);
+}
+
+.experience-entity h4 {
+    font-family: 'Major Mono Display', monospace; 
+    color: var(--shade5);
+    font-size: 28px;
+    transition: letter-spacing .25s ease;
+}
+
+.experience-time {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding-right: 2rem;
+    min-width: fit-content;
+}
+
+.experience-time::before {
+    content: "";
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    opacity: 0.05;
+}
+
+#TribalScale > .experience-time::before {
+    background-image: url(images/tribalscale.png);
+}
+
+#UntetherAI > .experience-time::before {
+    background-image: url(images/UntetherAIlogo.png);
+}
+
+#WindRiver > .experience-time::before {
+    background-image: url(images/Wind_River_logo.svg.png);
+}
+
+#AMD > .experience-time::before {
+    background-image: url(images/AMD-Logo.png);
 }
 /* skills section styling */
 .skills{
