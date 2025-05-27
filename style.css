@@ -408,6 +408,14 @@ section .title::after{
     border-radius: 25%;
     border: 2px solid turquoise;
 }
+
+.responsive-img {
+  width: 100%;
+  max-width: 200px; /* or whatever fits your layout */
+  height: 200px !important;
+  display: block;
+}
+
 .projects .carousel .card .lang{
     padding-top: 10px;
 }
@@ -429,7 +437,7 @@ section .title::after{
     margin-top: 20px;
 }
 .owl-carousel .owl-dots .owl-dot{
-    height: 13px;
+    height: 15px;
     width: 13px;
     margin: 0 5px;
     outline: none;
