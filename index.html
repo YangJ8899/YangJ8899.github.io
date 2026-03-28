@@ -5,24 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yang Ji</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Rajdhani:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-
 </head>
 <body>
+
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Personal<span> Profile</span></a></div>
+            <div class="logo"><a href="#">YJ<span>.EXE</span><i class="cursor-blink">_</i></a></div>
             <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#experiences">Experiences</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#home"><em class="nav-num">01.</em>Home</a></li>
+                <li><a href="#about"><em class="nav-num">02.</em>Profile</a></li>
+                <li><a href="#experiences"><em class="nav-num">03.</em>Quests</a></li>
+                <li><a href="#projects"><em class="nav-num">04.</em>Builds</a></li>
+                <li><a href="#skills"><em class="nav-num">05.</em>Inventory</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -30,61 +33,156 @@
         </div>
     </nav>
 
-    <!-- home section start-->
+    <!-- home section -->
     <section class="home" id="home">
+        <div class="home-corners">
+            <span class="hc hc-tl"></span>
+            <span class="hc hc-tr"></span>
+            <span class="hc hc-bl"></span>
+            <span class="hc hc-br"></span>
+        </div>
         <div class="max-width">
             <div class="home-content">
-                <div class="text-1">Hello, my name is</div>
+                <div class="text-1">// Hello, my name is</div>
                 <div class="text-2">Yang Ji</div>
-                <div class="text-3">And I'm a <span class="typing"></span></div>
+                <div class="text-3">I'm a <span class="typing"></span></div>
                 <div class="social padding">
                     <a href="https://github.com/YangJ8899" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/yang-ji-4590041ab/" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="https://www.instagram.com/yang.j_89/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="mailto:crast5707@hotmail.com"><i class="far fa-envelope"></i></a>
                 </div>
+                <div class="scroll-hint">▼ scroll to explore ▼</div>
             </div>
         </div>
     </section>
 
-    <!--about section start-->
+    <!-- about section -->
     <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title">About Me</h2>
-            <div class="about-content">
-                <div class="column left">
-                    <img src="images/profile-1.jpg" alt="">
+            <h2 class="title"><span class="title-caret">></span> Player_Profile</h2>
+
+            <!-- Player Card -->
+            <div class="player-card">
+                <div class="pc-header">
+                    <span class="pc-header-icon">👤</span>
+                    <span class="pc-header-label">CHARACTER INFO</span>
+                    <span class="pc-header-status">⚡ ACTIVE</span>
                 </div>
-                <div class="column right">
-                    <div class="text1">Hi! I'm Yang. I'm an MEng student at Cornell Tech and a recent computer science student graduate from the University of Waterloo 🖥️.</div>
-                    <div class="text2"> I have a passion for tech, programming and AI, as well as using it help out in daily living. 
-                                        Not only that, but I want to try and use this tech to entertain people around the world. 
-                                        My main goal is to one day develop a game that will bring in millions of users from across the globe. 
-                                        When I'm not busy working on projects or school, you can find me playing basketball or playing video games like Valorant or League of Legends.</div>
-                    <p> I have five co-op experiences under my belt, and am currently looking for a co-op opportunity for Fall 2024!</p> 
-                    <div class="about-experiences">
-                        <ul>
-                            <li><span>Most recently, I interned at TribalScale inc building their new component based website 🌐, using the contentful CMS to dynamically allow for component customization and building the entire site from React, TypeScript and NextJS.</span></li>
-                            <li><span>My 4th internship was at UntetherAI, where I helped build a waveform visualizer from the ground up using a Rust backend 🦀, and a JavaScript frontend.</span></li>
-                            <li><span>My 3rd internship was at WindRiver, where I was doing a mix of software engineering and devops, writing code while also helping maintain and improve their CI/CD processes.</span></li>
-                            <li><span>My 2nd internship was at AMD, where I worked as a display quality engineer, leading weekly regression tests for their Rembrandt APU 🖥️💻 while helping automate the tracking of JIRA tickets in my free time.</span></li>
-                            <li><span>My 1st internship was at MarketBox, where I was a full stack developer helping with improving both frontend and backend of their website.</span></li>
-                        </ul>
+                <div class="pc-body">
+                    <!-- Avatar column -->
+                    <div class="pc-avatar-col">
+                        <div class="avatar-frame">
+                            <img src="images/profile-1.jpg" alt="Yang Ji">
+                        </div>
+                        <div class="pc-name">Yang Ji</div>
+                        <div class="pc-class">Full Stack Developer</div>
+                        <div class="pc-level">⚔ LVL 23</div>
+                        <div class="pc-online">
+                            <span class="online-dot"></span>
+                            <span>Seeking New Grad Roles</span>
+                        </div>
                     </div>
-                    <p>Feel free to checkout my resume and my linkedin for more in depth details on my internships!</p>
-                    <a href="images/Resume.pdf" target="_blank">View My Resume</a>
+
+                    <!-- Stats + Education column -->
+                    <div class="pc-info-col">
+                        <div class="pc-stats">
+                            <div class="pc-section-label">── STATS ──</div>
+                            <div class="stat-row">
+                                <span class="stat-icon">⚔</span>
+                                <span class="stat-name">Frontend</span>
+                                <div class="stat-track">
+                                    <div class="stat-fill" style="--fill:90%;--clr:#00e5ff;"></div>
+                                </div>
+                                <span class="stat-val">90</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-icon">🛡</span>
+                                <span class="stat-name">Backend</span>
+                                <div class="stat-track">
+                                    <div class="stat-fill" style="--fill:80%;--clr:#4cff91;"></div>
+                                </div>
+                                <span class="stat-val">80</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-icon">🧠</span>
+                                <span class="stat-name">AI / ML</span>
+                                <div class="stat-track">
+                                    <div class="stat-fill" style="--fill:72%;--clr:#b44fe8;"></div>
+                                </div>
+                                <span class="stat-val">72</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-icon">⚙</span>
+                                <span class="stat-name">DevOps</span>
+                                <div class="stat-track">
+                                    <div class="stat-fill" style="--fill:68%;--clr:#ffd700;"></div>
+                                </div>
+                                <span class="stat-val">68</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-icon">🎮</span>
+                                <span class="stat-name">Game Dev</span>
+                                <div class="stat-track">
+                                    <div class="stat-fill" style="--fill:60%;--clr:#ff6eb4;"></div>
+                                </div>
+                                <span class="stat-val">60</span>
+                            </div>
+                        </div>
+
+                        <div class="pc-education">
+                            <div class="pc-section-label">── EDUCATION ──</div>
+                            <div class="edu-entry">
+                                <span class="edu-icon">🎓</span>
+                                <div class="edu-details">
+                                    <div class="edu-school">Cornell Tech</div>
+                                    <div class="edu-degree">Master of Engineering · Computer Science</div>
+                                </div>
+                                <span class="edu-badge meng-badge">MEng</span>
+                            </div>
+                            <div class="edu-entry">
+                                <span class="edu-icon">🎓</span>
+                                <div class="edu-details">
+                                    <div class="edu-school">University of Waterloo</div>
+                                    <div class="edu-degree">Bachelor of Science · Computer Science</div>
+                                </div>
+                                <span class="edu-badge bcs-badge">BCS</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+            <!-- Player Lore -->
+            <div class="player-lore">
+                <div class="lore-header">📖 PLAYER LORE</div>
+                <p class="lore-intro">Hi! I'm Yang. I'm an MEng student at Cornell Tech and a recent computer science student graduate from the University of Waterloo 🖥️.</p>
+                <p>I have a passion for tech, programming and AI, as well as using it help out in daily living. Not only that, but I want to try and use this tech to entertain people around the world. My main goal is to one day develop a game that will bring in millions of users from across the globe. When I'm not busy working on projects or school, you can find me playing basketball or playing video games like Valorant or League of Legends.</p>
+                <p>I have five co-op experiences under my belt, and am currently looking for a co-op opportunity for Fall 2024!</p>
+                <div class="lore-quest-log">
+                    <div class="lore-quest-label">⚔ Co-op Quest History:</div>
+                    <ul>
+                        <li><span>Most recently, I interned at TribalScale inc building their new component based website 🌐, using the contentful CMS to dynamically allow for component customization and building the entire site from React, TypeScript and NextJS.</span></li>
+                        <li><span>My 4th internship was at UntetherAI, where I helped build a waveform visualizer from the ground up using a Rust backend 🦀, and a JavaScript frontend.</span></li>
+                        <li><span>My 3rd internship was at WindRiver, where I was doing a mix of software engineering and devops, writing code while also helping maintain and improve their CI/CD processes.</span></li>
+                        <li><span>My 2nd internship was at AMD, where I worked as a display quality engineer, leading weekly regression tests for their Rembrandt APU 🖥️💻 while helping automate the tracking of JIRA tickets in my free time.</span></li>
+                        <li><span>My 1st internship was at MarketBox, where I was a full stack developer helping with improving both frontend and backend of their website.</span></li>
+                    </ul>
+                </div>
+                <p>Feel free to checkout my resume and my linkedin for more in depth details on my internships!</p>
+                <a href="images/Resume.pdf" target="_blank" class="pixel-btn">📄 View My Resume</a>
             </div>
         </div>
     </section>
     <script src="script.js"></script>
 
-    <!--experience section start-->
+    <!-- experience section -->
     <section class="experiences" id="experiences">
-        <div>
-            <h2 class="title">Experiences</h2>
+        <div class="max-width">
+            <h2 class="title"><span class="title-caret">></span> Quest_Log</h2>
             <div class="experience-block">
                 <div class="experience-entity" id="TribalScale">
+                    <div class="quest-tag">✅ COMPLETED</div>
                     <div class="experience-content">
                         <h2>TribalScale</h2>
                         <h1>Agile Software Engineer Intern</h1>
@@ -95,6 +193,7 @@
                     </div>
                 </div>
                 <div class="experience-entity" id="UntetherAI">
+                    <div class="quest-tag">✅ COMPLETED</div>
                     <div class="experience-content">
                         <h2>Untether AI</h2>
                         <h1>Software Engineer Intern</h1>
@@ -105,6 +204,7 @@
                     </div>
                 </div>
                 <div class="experience-entity" id="WindRiver">
+                    <div class="quest-tag">✅ COMPLETED</div>
                     <div class="experience-content">
                         <h2>Wind River</h2>
                         <h1>Software Engineer Intern</h1>
@@ -115,6 +215,7 @@
                     </div>
                 </div>
                 <div class="experience-entity" id="AMD">
+                    <div class="quest-tag">✅ COMPLETED</div>
                     <div class="experience-content">
                         <h2>AMD</h2>
                         <h1>Display Quality Engineer Intern</h1>
@@ -125,6 +226,7 @@
                     </div>
                 </div>
                 <div class="experience-entity" id="MarketBox">
+                    <div class="quest-tag">✅ COMPLETED</div>
                     <div class="experience-content">
                         <h2>MarketBox Inc.</h2>
                         <h1>Full Stack Engineer Intern</h1>
@@ -137,10 +239,11 @@
             </div>
         </div>
     </section>
-    <!--projects section start-->
+
+    <!-- projects section -->
     <section class="projects" id="projects">
         <div class="max-width">
-            <h2 class="title">My Projects</h2>
+            <h2 class="title"><span class="title-caret">></span> Build_Showcase</h2>
             <div class="carousel owl-carousel owl-theme">
                 <div class="card">
                     <div class="box">
@@ -178,7 +281,7 @@
                             <span>PHP</span>
                             <span>CSS</span>
                             <span>HTML</span>
-                            <span>JQuery</span> 
+                            <span>JQuery</span>
                             <span>JavaScript</span>
                             <span>SQL</span>
                         </div>
@@ -194,7 +297,7 @@
                             <span>Python</span>
                         </div>
                         <div class="text">Space Virus Defense</div>
-                        <p> Space Virus Defense was a my first step into the world of programming. It was a my take at a mix of space invaders and tower defense games put into one... except you are trying to protect PCs from viruses, and those PCs are stuck in outer space. It was created using python and the pygame interface, looking back at it now, there are alot of things that could be improved, but considering it was my first ever project, I think it went quite well.</p>
+                        <p>Space Virus Defense was a my first step into the world of programming. It was a my take at a mix of space invaders and tower defense games put into one... except you are trying to protect PCs from viruses, and those PCs are stuck in outer space. It was created using python and the pygame interface, looking back at it now, there are alot of things that could be improved, but considering it was my first ever project, I think it went quite well.</p>
                         <a href="https://github.com/YangJ8899/Space-Virus-Defense" target="_blank">Take a look at the code on Github</a>
                     </div>
                 </div>
@@ -220,22 +323,22 @@
                             <span>Kotlin</span>
                             <span>JavaFX</span>
                             <span>SpringBoot</span>
-                            <span>AWS</span> 
+                            <span>AWS</span>
                             <span>HTTP Requests</span>
                         </div>
                         <div class="text">NotesApp</div>
                         <p>NotesApp was a group project developed in hopes of creating an easy to use notes taking application. Using kotlin and javafx as the main UI and model, dealing with note creation, editing, sorting and many other cool features. The app is also usable across different devices because of our Springboot server and AWS database that saves all notes information safely</p>
                         <a href="https://github.com/johnnchung/NotesApp" target="_blank">Take a look at this project on Github</a>
                     </div>
-                </div>          
+                </div>
             </div>
         </div>
     </section>
 
-        <!-- Skills Section Start-->
-        <section class="skills" id="skills">
-            <div class="max-width">
-            <h2 class="title">My Skills</h2>
+    <!-- skills section -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title"><span class="title-caret">></span> Skill_Points</h2>
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">My Technological Skills</div>
@@ -243,52 +346,57 @@
                     </p>
                 </div>
                 <div class="column right">
-                    <div class="text1">Technologies:</div>
-                    <span>PHP</span>
-                    <span>JQuery</span>
-                    <span>React</span>
-                    <span>Node.js</span>
-                    <span>Git</span>
-                    <span>AWS Amplify</span>
-                    <span>GraphQL</span>
-                    <span>JIRA</span>
-                    <span>Jenkins</span>
-                    <span>MongoDB</span>
-                    <span>SpringBoot</span>
-                    <span>Tauri</span>
-                    <span>Tailwind CSS</span>
-                    <div class="text2"> Programming Languages:</div>
-                    <span>Python</span>
-                    <span>C</span>
-                    <span>C++</span>
-                    <span>R Studio</span>
-                    <span>JavaScript</span>
-                    <span>SQL</span>
-                    <span>Racket</span>
-                    <span>CSS</span>
-                    <span>HTML</span>
-                    <span>Kotlin</span>
-                    <span>JavaFX</span>
-                    <span>Rust</span>
-                    <span>TypeScript</span>
-                </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- footer Section Start-->
-        <section class="footer">
-            <div class="max-width">
-                <div class="footer-content">
-                    <h2 class="text">Made by <span>Yang Ji</span>
-                    <div class="social">
-                        <a href="https://github.com/YangJ8899?tab=projects" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/yang-ji-4590041ab/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/yang.j_89/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="mailto:crast5707@hotmail.com"><i class="far fa-envelope"></i></a>
+                    <div class="inv-label">🔧 Technologies</div>
+                    <div class="inv-grid inv-cyan">
+                        <div class="inv-slot"><span>PHP</span></div>
+                        <div class="inv-slot"><span>JQuery</span></div>
+                        <div class="inv-slot"><span>React</span></div>
+                        <div class="inv-slot"><span>Node.js</span></div>
+                        <div class="inv-slot"><span>Git</span></div>
+                        <div class="inv-slot"><span>AWS Amplify</span></div>
+                        <div class="inv-slot"><span>GraphQL</span></div>
+                        <div class="inv-slot"><span>JIRA</span></div>
+                        <div class="inv-slot"><span>Jenkins</span></div>
+                        <div class="inv-slot"><span>MongoDB</span></div>
+                        <div class="inv-slot"><span>SpringBoot</span></div>
+                        <div class="inv-slot"><span>Tauri</span></div>
+                        <div class="inv-slot"><span>Tailwind CSS</span></div>
+                    </div>
+                    <div class="inv-label inv-label-purple">💻 Programming Languages</div>
+                    <div class="inv-grid inv-purple">
+                        <div class="inv-slot lang-slot"><span>Python</span></div>
+                        <div class="inv-slot lang-slot"><span>C</span></div>
+                        <div class="inv-slot lang-slot"><span>C++</span></div>
+                        <div class="inv-slot lang-slot"><span>R Studio</span></div>
+                        <div class="inv-slot lang-slot"><span>JavaScript</span></div>
+                        <div class="inv-slot lang-slot"><span>SQL</span></div>
+                        <div class="inv-slot lang-slot"><span>Racket</span></div>
+                        <div class="inv-slot lang-slot"><span>CSS</span></div>
+                        <div class="inv-slot lang-slot"><span>HTML</span></div>
+                        <div class="inv-slot lang-slot"><span>Kotlin</span></div>
+                        <div class="inv-slot lang-slot"><span>JavaFX</span></div>
+                        <div class="inv-slot lang-slot"><span>Rust</span></div>
+                        <div class="inv-slot lang-slot"><span>TypeScript</span></div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="max-width">
+            <div class="footer-content">
+                <p class="text">Made by <span>Yang Ji</span></p>
+                <div class="social">
+                    <a href="https://github.com/YangJ8899?tab=projects" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/yang-ji-4590041ab/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/yang.j_89/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:crast5707@hotmail.com"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
